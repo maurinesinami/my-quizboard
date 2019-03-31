@@ -17,7 +17,24 @@ $(document).ready(function () {
         var total = parseInt((a + b + c + d + e) / 50 * 100);
         var name = $("input#firstName").val();
         var name = $("input#secondName").val();
-        
+        if (percent > 79) {
+            $("#correct").text( " You scored " + percent + "%. " + "EXCELLENT");
+          } else if (percent > 59 && percent < 79) {
+            $("#correct").text(" You scored " + percent + "%. " + "FAIR YOU CAN DO BETTER");
+          } else if (percent > 39 && percent < 59) {
+            $("#correct").text(" You scored " + percent + "%. " + "Below Average !.");
+          } else if(percent >0 && percent<20) {
+            $("#correct").text(" You scored " + percent + "%. " + "POOR!");
+          }else if(percent === 0){
+            $("#correct").text("You scored "+ percent+ " %. " + " !!!!! ");
+          } else{
+            $("#correct").text("You need to answer ALL the questions")
+          };
+            $("#hidden").fadeToggle();
+          });
+        });
+      });
+      
         $("#submit").click(function () {
             $("#results").slideToggle();
         });
