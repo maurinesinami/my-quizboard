@@ -17,7 +17,7 @@ $(document).ready(function () {
         var total = parseInt((a + b + c + d + e) / 50 * 100);
         var name = $("input#firstName").val();
         var name = $("input#secondName").val();
-        $("#results").text(name + " " + "your score is :" + " " + display + "%");
+        
         $("#submit").click(function () {
             $("#results").slideToggle();
         });
