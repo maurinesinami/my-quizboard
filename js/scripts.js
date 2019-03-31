@@ -5,4 +5,9 @@ function set (){
 }
 
 //U.I Logic//
-$(docume)
+$(document).ready(function(){
+    $("#quiz").submit(function(event){
+        event.preventDefault();
+        var a=parseInt)($("input:radio[name=Q1]:checked").val());
+    })
+})
