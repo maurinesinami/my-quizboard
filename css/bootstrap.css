@@ -5819,6 +5819,7 @@ button.list-group-item-danger.active:focus {
   padding-bottom: 75%;
 }
 .well {
+  font-family: 'Rye', cursive;
   font-size: 20px;
   color:#843534;
   min-height: 20px;
@@ -5829,7 +5830,7 @@ button.list-group-item-danger.active:focus {
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
           box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
-          font-family: 'Nixie One', cursive;
+          
 }
 .well blockquote {
   border-color: #ddd;
